@@ -25,12 +25,12 @@
                 <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Digite seu e-mail"
                        [(ngModel)]="contrato.email" >
                 <label for="autoria">Número de contato</label>
-                <input type="email" class="form-control mb-3" id="telefone" name="telefone" placeholder="Digite seu telefone"
+                <input type="number" class="form-control mb-3" id="telefone" name="telefone" placeholder="Digite seu telefone"
                        [(ngModel)]="contrato.telefone" >
 
                 <div class="acoes d-flex justify-content-between">
                     <button (click)="criarContrato()" class="btn btn-matricula">Continuar matricula</button>
-                    <button (click)="cancelar()" class="btn btn-secondary">Cancelar</button>
+                    <button (click)="cancelar()" routerLink="/matriculas" class="btn btn-secondary">Cancelar</button>
                 </div>
 
             </form>     

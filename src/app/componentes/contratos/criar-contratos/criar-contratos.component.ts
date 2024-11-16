@@ -6,14 +6,15 @@ import { Router } from '@angular/router';
   selector: 'app-criar-contratos',
   standalone: true,
   imports: [],
-  templateUrl: './criar-contratos.component.html',
+  templateUrl:'./criar-contratos.component.html',
   styleUrl: './criar-contratos.component.css'
 })
 export class CriarContratosComponent implements OnInit {
   contrato = {
     id: '',
-    nome:''
-    numero: '',
+    nome:'',
+    email:'',
+    telefone: '',
   }
   router: any;
 
